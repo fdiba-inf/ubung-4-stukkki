@@ -4,20 +4,21 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MinIndex {
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int length = sc.nextInt();
-    double[] arr = new double[length];
-    double min = 100000;
 
-    for(int i = 0; i < arr.length; i++) {
-      arr[i] = sc.nextDouble();
-      if(min > arr[i]) {
-        min = arr[i];
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int g = input.nextInt();  
+    int[] array = new int[g];
+    int min = 100;
+    int index = 0;
+
+    for(int i = 0; i < g; i ++) {
+      array[i] = input.nextInt();
+      if (min > array[i]) {
+        min = array[i];
+        index = i;
       }
-}
-    System.out.println("Min index: " + min);
-  
-
-  }
+    }
+    System.out.println("Min index: " + index);       
+    }
 }
