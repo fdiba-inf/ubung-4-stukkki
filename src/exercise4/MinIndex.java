@@ -16,7 +16,7 @@ public class MinIndex {
         min = arr[i];
       }
 }
-    System.out.println("Min Index: "+ min);
+    System.out.println("Min index: "+ min);
   
 
   }
