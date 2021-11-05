@@ -8,7 +8,7 @@ public class MaxElement {
     Scanner sc = new Scanner(System.in);
     int length = sc.nextInt();
     double[] arr = new double[length];
-    double max = -100;
+    double max = -10000;
 
     for(int i = 0; i < arr.length; i++) {
       arr[i] = sc.nextDouble();
@@ -16,7 +16,7 @@ public class MaxElement {
         max = arr[i];
       }
 }
-    System.out.println("Max Number: " + max);
+    System.out.println("Max number: " + max);
   }
 }
 
